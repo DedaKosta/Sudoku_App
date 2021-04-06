@@ -1,0 +1,222 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: inherit;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 400px;
+    height: 100%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timer label {
+    font-size: xxx-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.timer {
+    width: 100%;
+    height: 100%;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timer img {
+    height: 50%;
+    cursor: pointer;
+    margin: auto 2rem;
+}
+
+.content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.greed {
+    margin:2% 5% 0 5%;
+    width: 90vh;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(9,10%);
+    grid-template-rows: repeat(9,10%);
+    grid-column: span 1;
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-flow: column-reverse wrap;
+    position: relative;
+    background-color: white;
+    user-select: none;
+    background-color: white;
+}
+
+.tile div {
+    cursor: pointer;
+    float: left;
+    color: blue;
+}
+
+.value {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: xxx-large;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma,Verdana,sans-serif;
+}
+
+.inside {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.outside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    float: left;
+    position:sticky;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.outside div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-top: 70%;
+    width: 80%;
+    height: 100%;
+}
+
+.number-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.mods {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70%;
+    width: 80%;
+    height: 100%;
+}
+
+.hidden {
+    color: white !important;
+    background-color: white !important;
+    outline: none;
+}
+
+.number {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+    border-radius: 0.7rem;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: xxx-large;
+    align-items: center;
+    color: orange;
+    cursor: pointer;
+    font-family: Tahoma,Verdana,sans-serif;
+    user-select: none;
+}
+
+.number:hover {
+    background-color: #cc34eb;
+}
+
+.mode {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+    border-radius: 0.7rem;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: orange;
+    cursor: pointer;
+    font-family: Tahoma,Verdana,sans-serif;
+    user-select: none;
+    outline: none;
+}
+
+.new {
+    width: 100%;
+    height: 5rem;
+    background-color: purple;
+    margin: 0.5rem;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: orange;
+    cursor: pointer;
+    font-family: Tahoma,Verdana,sans-serif;
+    user-select: none;
+    outline: none;
+    font-size: xx-large;
+}
+
+#value {
+    background-color: #cc34eb;
+}
