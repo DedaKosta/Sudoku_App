@@ -20,8 +20,8 @@ I plan to implement some other features in this app:
   - Killer cages
   - Sandwich sudoku option
   - Diagonal sum
-  - arrow sudoku
-  - termo sudoku
+  - Arrow sudoku
+  - Termo sudoku
   - Cell coloring
   - A page for setting sudokus
   - Maybe some more on the way
